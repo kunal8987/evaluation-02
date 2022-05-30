@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  #banner {
+    width: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: #2b368e;
+    margin: auto;
+    border-radius: 10px;
+  }
+  #banner > div:first-child {
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 50%;
+    padding-top: 30px;
+    margin-left: 3%;
+  }
+  #banner > div:last-child {
+    /* border: 1px solid blue; */
+    width: 40%;
+    margin-left: 35%;
+  }
+  #banner > div > img {
+    width: 80%;
+  }
+  #banner > div > h1 {
+    color: white;
+    padding-bottom: 8px;
+  }
+  #banner > div > p {
+    color: white;
+    padding-bottom: 8px;
+  }
+  #banner > div > button {
+    font: size 16px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  /* services section  services section */
+
+  #services {
+    /* border: 1px solid blue; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    gap: 15px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #services > div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+  }
+  #services > div > img {
+    width: 100%;
+  }
+  #services > div > h4 {
+    /* width: 70%; */
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+  /* work section     work section          work section */
+
+  #works > h1 {
+    text-align: center;
+    padding-top: 30px;
+  }
+  #works > p {
+    text-align: center;
+  }
+  #works > div {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  #works > div > div > img {
+    width: 100%;
+  }
+  #works > div > div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  #works > div > div > h4 {
+    padding-left: 8px;
+  }
+  #works > div > div > p {
+    padding-left: 8px;
+  }
+
+  /* Medium Screen */
+  @media only screen and (min-width: 500px) and (max-width: 768px) {
+    #banner > div:first-child {
+      width: 100%;
+      height: 50%;
+      padding-top: 20px;
+      margin-left: 3%;
+    }
+    #banner > div:last-child {
+      /* border: 1px solid blue; */
+      width: 50%;
+      margin-left: 55%;
+    }
+    #banner {
+      display: flex;
+      flex-direction: column;
+    }
+    #services {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 320px);
+    }
+    #works > div {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 300px);
+    }
+  }
+
+  /* Small Screen */
+  @media only screen and (min-width: 320px) and (max-width: 499px) {
+    #banner > div:first-child {
+      width: 70%;
+      height: 50%;
+      padding-top: 10px;
+      margin-left: 3%;
+    }
+    #banner > div:last-child {
+      /* border: 1px solid blue; */
+      width: 40%;
+      margin-left: 65%;
+    }
+    #banner {
+      display: flex;
+      flex-direction: column;
+    }
+    #services {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 300px);
+    }
+    #works > div {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 350px);
+    }
+    
+  }
